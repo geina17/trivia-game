@@ -1,0 +1,20 @@
+body{
+	background-image: url(batmen.jpg);
+	max-width:900px; 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#container{
+	color: ;
+}
+
+header{
+	text-align:center;
+}
+input{
+	background-color: ;
+	color: ;
+	cursor:pointer;
+}
