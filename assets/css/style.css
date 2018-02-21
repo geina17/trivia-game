@@ -1,20 +1,41 @@
+@font-face {
+    font-family: 'gotham_nightsregular';
+    src: url('../font/webfont/gotham_nights-webfont.woff2') format('woff2'),
+         url('../font/webfont/gotham_nights-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
-	background-image: url(batmen.jpg);
+	background-image: url(batman.jpg);
+	background-color: #000000;
 	max-width:900px; 
 	background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+ 	float: left;
+ 	padding-left:50px;
 }
 
 #container{
-	color: ;
+	/*background-color:#A9A8A8;*/
+	color:#A9A8A8;
+	font-family:'gotham_nightsregular';
+	font-size: ;
+	width:600px;
+	
 }
-
+#timer{
+	text-align: center;
+}
 header{
+	color:#A9A8A8 ;
+	font-family :'gotham_nightsregular';
+	font-size:50px ;
 	text-align:center;
 }
+
 input{
-	background-color: ;
-	color: ;
+	background-color:#000000 ;
+	color:#eaea00;
 	cursor:pointer;
+	padding-top: 20px;
 }
