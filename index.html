@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-  <html lang ="en">
+<!DOCTYPE HTML>
+  <html lang ="en-us">
     <head>    
         <title>Batman Trivia</title>
     
@@ -7,64 +7,75 @@
     </head>
 
 	<body>
+		<!-- start o pg -->
 		<div id='container'>
+			<button id="start">Start!</button>
 			<header>Batman Quiz</header>
+		</div>	
+			<!-- <input id= "start" type="start" value="start"> -->
+			<!-- quiz -->
 			<section>
+				<header>Batman Quiz</header>
+				<!-- timer -->
+				<h1 id="timer">You're running out of time Bats:<span id="timerNumber">60</span></h1>
+
 				<div id = "results"></div>
+
 				<form name="quizForm" onclick ="return sumbmitAnswers()">
 					<h3>What super villain once broke Batman's back leaving him crippled?</h3>
 					<input type="radio" name="q1" value="a" id="q1a"> Joker <br>
-					<input type="radio" name="q2" value="b" id="q2b"> Bane <br>
-					<input type="radio" name="q3" value="c" id="q3c"> Killer Croc <br>
-					<input type="radio" name="q4" value="d" id="q4d"> Ra's al Ghul<br> 
-					<b></b>
-					<input type="submit" value="submit">
+					<input type="radio" name="q1" value="b" id="q1b"> Bane <br>
+					<input type="radio" name="q1" value="c" id="q1c"> Killer Croc <br>
+					<input type="radio" name="q1" value="d" id="q1d"> Ra's Al Ghul<br> 					
 					
 					<h3>What were Bruce Wayne's parents name?</h3>
-					<input type="radio" name="q1" value="a" id="q1a"> George + Elaine<br>
+					<input type="radio" name="q2" value="a" id="q2a"> George + Elaine<br>
 					<input type="radio" name="q2" value="b" id="q2b"> Thomas + Martha<br>
-					<input type="radio" name="q3" value="c" id="q3c"> James + Elizabeth<br>
-					<input type="radio" name="q4" value="d" id="q4d"> Wayne + Alice<br>
-					<b></b>
-					<input type="submit" value="submit">
+					<input type="radio" name="q2" value="c" id="q2c"> James + Elizabeth<br>
+					<input type="radio" name="q2" value="d" id="q2d"> Wayne + Alice<br>					
 					
-					<h3>Who played Batman in the 1960s TV series?</h3>
-					<input type="radio" name="q1" value="a" id="q1a"> Micheal Keaton<br>
-					<input type="radio" name="q2" value="b" id="q2b"> Robert Lowery<br>
+					<h3>Who played Batman in the 1960's TV series?</h3>
+					<input type="radio" name="q3" value="a" id="q3a"> Micheal Keaton<br>
+					<input type="radio" name="q3" value="b" id="q3b"> Robert Lowery<br>
 					<input type="radio" name="q3" value="c" id="q3c"> Burt Ward <br>
-					<input type="radio" name="q4" value="d" id="q4d"> Adam West<br>
-					<b></b>
-					<input type="submit" value="submit">
+					<input type="radio" name="q3" value="d" id="q3d"> Adam West<br>
 					
 					<h3>Which of these Bat-villains was introduced first?</h3>
-					<input type="radio" name="q1" value="a" id="q1a"> The Penguin<br>
-					<input type="radio" name="q2" value="b" id="q2b"> Mr.Freeze<br>
-					<input type="radio" name="q3" value="c" id="q3c"> The Riddler<br>
-					<input type="radio" name="q4" value="d" id="q4d"> Catwoman<br>
-					<b></b>
-					<input type="submit" value="submit">
+					<input type="radio" name="q4" value="a" id="q4a"> The Penguin<br>
+					<input type="radio" name="q4" value="b" id="q4b"> Mr.Freeze<br>
+					<input type="radio" name="q4" value="c" id="q4c"> The Riddler<br>
+					<input type="radio" name="q4" value="d" id="q4d"> Catwoman<br>					
 					
 					<h3>The original Batgirl was related to what familiar Batman character?</h3>
-					<input type="radio" name="q1" value="a" id="q1a"> The Joker<br>
-					<input type="radio" name="q2" value="b" id="q2b"> Alfred<br>
-					<input type="radio" name="q3" value="c" id="q3c"> Commissioner Gordon<br>
-					<input type="radio" name="q4" value="d" id="q4d"> Batwomen<br>
-					<b></b>
-					<input type="submit" value="submit">
+					<input type="radio" name="q5" value="a" id="q5a"> The Joker<br>
+					<input type="radio" name="q5" value="b" id="q5b"> Alfred<br>
+					<input type="radio" name="q5" value="c" id="q5c"> Commissioner Gordon<br>
+					<input type="radio" name="q5" value="d" id="q5d"> Batwomen<br>
 
 					<h3>Who created batman?</h3>
-					<input type="radio" name="q1" value="a" id="q1a"> Jerry Siegel<br>
-					<input type="radio" name="q2" value="b" id="q2b"> Bob Kane<br>
-					<input type="radio" name="q3" value="c" id="q3c"> Jack Kirby<br>
-					<input type="radio" name="q4" value="d" id="q4d"> Joe Shuster<br>
-					<b></b>
-					<input type="submit" value="submit">
+					<input type="radio" name="q6" value="a" id="q6a"> Jerry Siegel<br>
+					<input type="radio" name="q6" value="b" id="q6b"> Bob Kane<br>
+					<input type="radio" name="q6" value="c" id="q6c"> Jack Kirby<br>
+					<input type="radio" name="q6" value="d" id="q6d"> Joe Shuster<br>
+					<br>
+					<br>
+					<button id="done">Submit</button>
 				</form>
 			</section>
-		</div>
 
-		
-				<!-- what were Bruce Wayne's parents name?
+			<div id="resultsPg">
+				<header>Batman Quiz</header>
+				<h1 id="done">Mission Completed</h1>
+				<p>Correct:<span id="correctAnswers">0</span></p>
+				<p>Wrong:<span id="wrongAnswers">0</span></p>
+				<p>Unanswered:<span id="unanswered">0</span></p>	
+			</div>
+
+		<script type = "text/javascript" src="assets/java/game.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	</body>
+</html>
+<!-- what were Bruce Wayne's parents name?
 					Thomas +Martha *
 						As a child, Bruce Wayne witnessed the gruesome murder of his parents, Thomas and Martha Wayne.			
 				who created batman?
@@ -77,9 +88,5 @@
 					catwoeman
 						Catwoman made her first appearance in Batman #1 (Spring, 1940). 
 				Who played Batman in the 1960s TV series?
-				adam west
-					Adam West is best known for the title role in the 1960s ABC series Batman.
-		 -->
-		<script type = "text/javascript" src="game.js"></script>
-	</body>
-</html>
+				Adam west
+					Adam West is best known for the title role in the 1960s ABC series Batman.-->
