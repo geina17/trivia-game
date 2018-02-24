@@ -1,12 +1,13 @@
 @font-face {
     font-family: 'gotham_nightsregular';
-    src: url('../font/webfont/gotham_nights-webfont.woff2') format('woff2'),
-         url('../font/webfont/gotham_nights-webfont.woff') format('woff');
+    src: url('../fonts/webfont/gotham_nights-webfont.woff2') format('woff2'),
+         url('../fonts/webfont/gotham_nights-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 body{
-	background-image: url(batman.jpg);
+	background-image: url(../images/batman.jpg);
 	background-color: #000000;
 	max-width:900px; 
 	background-repeat: no-repeat;
@@ -14,28 +15,62 @@ body{
  	float: left;
  	padding-left:50px;
 }
-
-#container{
-	/*background-color:#A9A8A8;*/
-	color:#A9A8A8;
-	font-family:'gotham_nightsregular';
-	font-size: ;
-	width:600px;
-	
+#menu{
+	/*text-align:center;*/
 }
 #timer{
-	text-align: center;
+	/*text-align:center;*/
+	color:#eaea00;
+	margin-bottom: 50px;
+	margin-top: 0px;
+}
+#start{
+	background-color:#000000 ;
+	color:#eaea00;
+	cursor:pointer;
+	position: center;
+}
+#board{
+	width: 375px;
+
+
+}
+section{
+	/*background-color:#A9A8A8;*/
+/*	text-align: center;*/
+	color:#A9A8A8;
+	font-family:'gotham_nightsregular';
+	font-size:20px ;
+	width:800px;	
+}
+h3{
+	font-size: 25px;
+}
+#mc{
+	margin-top: 0;
+	margin-bottom: 25px;
 }
 header{
 	color:#A9A8A8 ;
 	font-family :'gotham_nightsregular';
-	font-size:50px ;
-	text-align:center;
+	font-size:100px ;
+	/*text-align:center;*/
 }
 
-input{
+#done{
 	background-color:#000000 ;
 	color:#eaea00;
 	cursor:pointer;
-	padding-top: 20px;
+	padding-top: ;
+}
+#resultsPg{
+	color:#A9A8A8;
+	font-family:'gotham_nightsregular';
+	font-size:20px ;
+}
+button{
+	font-size: 50px;
+	padding:14px 40px;
+	/*border-radius: 50%;*/
+	width: 350px; 
 }
