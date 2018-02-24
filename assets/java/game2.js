@@ -7,7 +7,7 @@ var bigben = null;
 
 
 var clock = {
-    time: 2,
+    time: 60,
     timeleft: 0,
     bigben: null,
 
