@@ -7,21 +7,24 @@
     </head>
 
 	<body>
+
 		<!-- start o pg -->
-		<div id='container'>
-			<button id="start">Start!</button>
+		<div id='menu'>
 			<header>Batman Quiz</header>
+			<button id="start">Start!</button>	
 		</div>	
 			<!-- <input id= "start" type="start" value="start"> -->
 			<!-- quiz -->
 			<section>
-				<header>Batman Quiz</header>
-				<!-- timer -->
-				<h1 id="timer">You're running out of time Bats:<span id="timerNumber">60</span></h1>
+				<div id="board">
+					<header>Batman Quiz</header>
+					<!-- timer -->
+					<h3>You're running out of time Bats:<h3>
+					<h3><span id="timer">60</span></h3>
+				</div>
+				<div id ="results"></div>
 
-				<div id = "results"></div>
-
-				<form name="quizForm" onclick ="return sumbmitAnswers()">
+				<div id="quiz" onclick ="return gameOver()">
 					<h3>What super villain once broke Batman's back leaving him crippled?</h3>
 					<input type="radio" name="q1" value="a" id="q1a"> Joker <br>
 					<input type="radio" name="q1" value="b" id="q1b"> Bane <br>
@@ -60,19 +63,22 @@
 					<br>
 					<br>
 					<button id="done">Submit</button>
-				</form>
+				</div>
 			</section>
 
 			<div id="resultsPg">
 				<header>Batman Quiz</header>
-				<h1 id="done">Mission Completed</h1>
+				<h3 id="mc">Mission Completed!</h3>
 				<p>Correct:<span id="correctAnswers">0</span></p>
 				<p>Wrong:<span id="wrongAnswers">0</span></p>
 				<p>Unanswered:<span id="unanswered">0</span></p>	
 			</div>
+<!-- Added link to the jQuery library -->
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 
-		<script type = "text/javascript" src="assets/java/game.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+		<script type = "text/javascript" src="assets/java/game2.js"></script>
+		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
 	</body>
 </html>
 <!-- what were Bruce Wayne's parents name?
